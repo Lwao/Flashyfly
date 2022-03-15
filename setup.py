@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.2' 
+VERSION = '0.0.4' 
 DESCRIPTION = 'Flashyfly package to build and flash firmware in production environment'
 LONG_DESCRIPTION = 'Flashyfly package to build and flash firmware in production environment working as a CLI wrapper for Platformio objecting ease of use and speed to deploy firmware in a hardware platform'
 
@@ -14,6 +14,7 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
+        scripts=['flashyfly.py'],
         install_requires=['platformio','typer'], # add any additional packages that 
         
         keywords=['python', 'build', 'flash', 'firmware', 'hardware'],
@@ -26,9 +27,8 @@ setup(
         ]
 ) 
 
-# pyinstaller -F ./flashyfly.py -n flashyfly
+# twine upload dist/*
 # python -m pipreqs.pipreqs
 
 # python setup.py sdist bdist_wheel
-# twine upload dist/*
 # twine upload --skip-existing dist/*
