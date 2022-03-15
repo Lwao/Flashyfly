@@ -26,6 +26,9 @@ setup(
         ]
 ) 
 
+# pyinstaller -F ./flashyfly.py -n flashyfly
+# python -m pipreqs.pipreqs
+
 # python setup.py sdist bdist_wheel
 # twine upload dist/*
 # twine upload --skip-existing dist/*

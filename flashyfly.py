@@ -1,7 +1,6 @@
-# python -m pipreqs.pipreqs
 import typer
-import commands as flashyfly
-
+import flashyfly
+import os
 app = typer.Typer(context_settings={"help_option_names": ["-h", "--help"]}, add_help_option=True, no_args_is_help=True)
 app_project = typer.Typer(context_settings={"help_option_names": ["-h", "--help"]}, add_help_option=True, no_args_is_help=True)
 
