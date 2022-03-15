@@ -1,6 +1,6 @@
 import os
 
-def init():
+def initer():
     os.mkdir('data')
     os.mkdir('firmware')
     os.mkdir('sketch')
@@ -20,5 +20,5 @@ def init():
     f.write('')
     f.close()
 
-if __name__ == "__main__":
-    init()
+# if __name__ == "__main__":
+#     initer()

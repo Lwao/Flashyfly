@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.4' 
+VERSION = '0.1.0' 
 DESCRIPTION = 'Flashyfly package to build and flash firmware in production environment'
 LONG_DESCRIPTION = 'Flashyfly package to build and flash firmware in production environment working as a CLI wrapper for Platformio objecting ease of use and speed to deploy firmware in a hardware platform'
 
@@ -14,8 +14,9 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
-        scripts=['flashyfly.py'],
         install_requires=['platformio','typer'], # add any additional packages that 
+        
+        entry_points={'console_scripts': ['flashyfly=flashyfly.cli:start']},
         
         keywords=['python', 'build', 'flash', 'firmware', 'hardware'],
         classifiers= [ # https://pypi.org/classifiers/

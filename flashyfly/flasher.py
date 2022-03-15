@@ -59,5 +59,5 @@ def flasher():
             print('Error: invalid choice. Ending script...')
             break
 
-if __name__ == "__main__":
-    flasher()
+# if __name__ == "__main__":
+#     flasher()

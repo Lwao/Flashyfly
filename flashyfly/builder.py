@@ -130,5 +130,5 @@ def builder():
     DST_PATH = os.path.join('sketch','partitions_%s.ino.esp32.bin' % sketch_version)
     shutil.copy(SRC_PATH, DST_PATH)
 
-if __name__ == "__main__":
-    builder()
+# if __name__ == "__main__":
+#     builder()

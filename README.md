@@ -16,11 +16,17 @@ The package can be installed with `pip`:
 $ pip install flashyfly
 ```
 
+Another chocie is to build the source code with the `setup.py` file:
+
+```
+$ python setup.py install
+```
+
 After the installation the CLI script can be invoked using the command:
 
 ```
-$ python flashyfly.py
-Usage: flashyfly.py [OPTIONS] COMMAND [ARGS]...
+$ flashyfly -h
+Usage: flashyfly [OPTIONS] COMMAND [ARGS]...
 
 Options:
   --install-completion [bash|zsh|fish|powershell|pwsh]
