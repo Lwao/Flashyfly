@@ -4,7 +4,7 @@ Flashyfly package to build and flash firmware in production environment working 
 
 <center> 
 
-<img src="img/flashyfly.png" alt="drawing" style="width:300px;"/> 
+![](img/flashyfly.png) 
 
 </center>
 
