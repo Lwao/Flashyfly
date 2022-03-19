@@ -28,10 +28,11 @@ def config_txt_string(targ):
 def builder():
     BASE_USER = os.path.expanduser('~')
 
-    if os.name == 'nt': # windows
-        PIO = PLATFORMIO = os.path.join(BASE_USER,'.platformio','penv','Scripts','platformio.exe')
-    elif os.name == 'posix': # linux
-        PIO = PLATFORMIO = os.path.join(BASE_USER,'.platformio','penv','bin','pio')
+    # if os.name == 'nt': # windows
+    #     PIO = PLATFORMIO = os.path.join(BASE_USER,'.platformio','penv','Scripts','platformio.exe')
+    # elif os.name == 'posix': # linux
+    #     PIO = PLATFORMIO = os.path.join(BASE_USER,'.platformio','penv','bin','pio')
+    PIO = 'pio'
 
     run_cmd = lambda cmd: subprocess.run(cmd, stdout=sys.stdout, stderr=sys.stderr, shell=True)
 

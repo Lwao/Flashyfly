@@ -8,12 +8,11 @@ def flasher():
 
     if os.name == 'nt': # windows
         SCRIPTS = os.path.join(BASE_USER,'.platformio','penv','Scripts')
-        PIO = PLATFORMIO = os.path.join(SCRIPTS,'platformio.exe')
-        PYTHON = os.path.join(SCRIPTS,'python.exe')
+        #PYTHON = os.path.join(SCRIPTS,'python.exe')
     elif os.name == 'posix': # linux
         BIN = os.path.join(BASE_USER,'.platformio','penv','bin')
-        PIO = PLATFORMIO = os.path.join(BIN,'pio')
-        PYTHON = os.path.join(BIN,'python')
+        #PYTHON = os.path.join(BIN,'python')
+    PYTHON = 'python'
 
     BASE_TOOLS = os.path.join(BASE_USER,'.platformio','packages','framework-arduinoespressif32','tools')
     BOOTLOADER_DIO_40M = os.path.join(BASE_TOOLS,'sdk','bin','bootloader_dio_40m.bin')

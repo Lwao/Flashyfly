@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.0' 
+VERSION = '0.1.2' 
 DESCRIPTION = 'Flashyfly package to build and flash firmware in production environment'
 LONG_DESCRIPTION = 'Flashyfly package to build and flash firmware in production environment working as a CLI wrapper for Platformio objecting ease of use and speed to deploy firmware in a hardware platform'
 
