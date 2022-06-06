@@ -39,11 +39,11 @@ def start():
         typer.echo('Building finished.')
 
     @app.command()
-    def flash():
+    def flash(sensor_name : str = typer.Argument(None), sensor_spiffs_version : str = typer.Argument(None), sensor_sketch_version : str = typer.Argument(None)):
         """
         Flash binaries according to availability.
         """
-        flasher()
+        flasher(sensor_name, sensor_spiffs_version, sensor_sketch_version)
         typer.echo('Flashing finished.')
 
 

@@ -16,7 +16,7 @@ The package can be installed with `pip`:
 $ pip install flashyfly
 ```
 
-Another chocie is to build the source code with the `setup.py` file:
+Also can be built from source with the `setup.py` file:
 
 ```
 $ python setup.py install
